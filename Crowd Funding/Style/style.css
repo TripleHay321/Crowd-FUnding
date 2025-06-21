@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./img/Download\ free\ image\ of\ Standing\ out\ from\ the\ crowd\ about\ people\,\ men\,\ business\,\ leadership\,\ and\ team\ 646483.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box {
+    height: 100vh;
+    width: 100%;
+    background: rgba(234, 0, 255, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+marquee {
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+    padding: 2%;
+}
+
+#btn {
+    border: 2px solid rgb(128, 0, 128);
+    background: transparent;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+#btn:hover {
+    transition: 1s ease-in-out;
+    background: purple;
+    color: #fff;
+}
+
