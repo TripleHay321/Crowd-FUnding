@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="./Style/style.css">
 </head>
 <body>
-    <div id="box">
-        <div class="container">
-            <div class="fluid_container">
-                <h2 class="name" style="color: #800080;">Fund<span style="color: #fff;">DAO</span></h2>
-                <marquee behavior="" direction="left">Empowering The Helpless</marquee>
-                <p id="btn-group" class="d-inline-flex gap-1">
-                    <a id="btn" class="btn" aria-disabled="true" role="button" data-bs-toggle="button">Copy Link</a>
-                    <a id="btn" href="pay.html" class="btn" role="button" aria-pressed="true">Fund Me</a>
-                </p>
+    <main class="main">
+        <div id="box">
+            <div id="copyStatus" style="width: 100%;" class="mt-3 top"></div>
+            <div class="container">
+                <div class="fluid_container">
+                    <h2 class="name" style="color: #800080;">Fund<span style="color: #fff;">DAO</span></h2>
+                    <marquee behavior="" direction="left">Empowering The Helpless</marquee>
+                    <p id="btn-group" class="d-inline-flex gap-1">
+                        <a id="btn" class="btn" onclick="copyToClipboard()" aria-disabled="true" role="button" data-bs-toggle="button">Copy Link</a>
+                        <a id="btn" href="pay.html" class="btn" role="button" aria-pressed="true">Fund Me</a>
+                    </p>
+                </div>
             </div>
-        </div>
     </div>
+    </main>
 </body>
 <script src="./Script/script.js"></script>
 </html>
