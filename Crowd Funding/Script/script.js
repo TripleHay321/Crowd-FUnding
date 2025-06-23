@@ -1,3 +1,26 @@
+function copyToClipboard() {
+  const text = "https://funddao.netlify.app"
+  const status = document.getElementById("copyStatus");
+
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      status.innerHTML = `
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          ✅ Address copied to clipboard!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
+    })
+    .catch(() => {
+      status.innerHTML = `
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          ❌ Failed to copy address. Please try again.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
+    });
+}
+
+
+//Pay Page 
 function handleSelection() {
   const input = document.getElementById("amountInput");
   const feedback = document.getElementById("flash");
@@ -53,4 +76,3 @@ function ShowPaymentStatus() {
     const feedback = document.getElementById("flash");
     feedback.innerHTML += '<br><span style="color: red;">Payment Unsuccessful.</span>';
   }
-
