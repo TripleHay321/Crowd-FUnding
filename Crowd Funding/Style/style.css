@@ -11,6 +11,16 @@ body {
     background-repeat: no-repeat;
 }
 
+#copyStatus {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1055; /* higher than most Bootstrap elements */
+    width: auto;
+    max-width: 100%;
+}
+
 #box {
     height: 100vh;
     width: 100%;
@@ -47,3 +57,6 @@ marquee {
     color: #fff;
 }
 
+.top {
+    display: inline-block;
+}
